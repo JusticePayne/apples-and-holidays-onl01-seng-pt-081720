@@ -23,16 +23,14 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
-       puts "#{season.to_s.capitalize!}:"
-       holiday.each do |name, supply|
-         new_array = []
-         array = name.to_s.split("_#split all the words with _
-         #capitalize the names"
-         array.each { |word| new_array << word.capitalize!}
-         name = new_array.join(" ")
-         supply = supply.join(", ")
-         puts "#{name}: #{supply}"
-       end
+    puts "#{season.to_s.capitalize!}:"
+    holiday.each do |name, supply|
+      new_array = []
+      array=name.to_s.split("array.each{|word|new_array<<word.capitalize!}")
+      name = new_array.join("")
+      supply = supply.join(", ")
+      puts"#{name}:#{supply}"
+      end
     end
 end
 
