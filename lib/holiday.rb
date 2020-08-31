@@ -22,21 +22,23 @@ end
 
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season,holiday|
-    puts"#{season.to_s.capitalize!}:"
-    holiday.each do |name, supply|
-      new_array = []
-      array=name.to_s.split"array.each{|word|new_array<<word.capitalize!}"
-      name=new_array.join("")
-      supply=supply.join(",")
-      puts"#{name}:#{supply}"
-      end
+  holiday_hash.each do |season, holiday|
+       puts "#{season.to_s.capitalize!}:"
+       holiday.each do |name, supply|
+         new_array = []
+         array = name.to_s.split("_#split all the words with _
+         #capitalize the names"
+         array.each { |word| new_array << word.capitalize!}
+         name = new_array.join(" ")
+         supply = supply.join(", ")
+         puts "#{name}: #{supply}"
+       end
     end
 end
 
 def all_holidays_with_bbq(holiday_hash)
   array = []
-  holiday_hash.each. do |season,holiday|
+  holiday_hash.each. do |season, holiday|
     holiday.each do |name, supply|
     if supply.include?("BBQ")
       array<<name
