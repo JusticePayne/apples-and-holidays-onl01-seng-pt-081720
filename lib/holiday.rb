@@ -22,7 +22,7 @@ end
 
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season, holiday|
+  holiday_hash.each do |season,holiday|
     puts"#{season.to_s.capitalize!}:"
     holiday.each do |name, supply|
       new_array = []
@@ -36,7 +36,7 @@ end
 
 def all_holidays_with_bbq(holiday_hash)
   array = []
-  holiday_hash.each. do |season, holiday|
+  holiday_hash.each. do |season,holiday|
     holiday.each do |name, supply|
     if supply.include?("BBQ")
       array<<name
