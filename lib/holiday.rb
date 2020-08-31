@@ -28,4 +28,4 @@ def all_supplies_in_holidays(holiday_hash)
       puts "#{event.to_.split("_").map do ([x]x.capitalize.join(" ")}: #supplies.join(", "))"
     end
   end
-end  
+end
