@@ -23,19 +23,9 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
-    puts "#{season.capitalize}:"
-    holiday.each do |holiday, item|
-      puts " #{holiday.to_s.split("_").map {|i| i.capitalize.join(" ")}}":
+    puts "#{season.to_s.capitalize}:"
+    holiday.each do |event, supplies|
+      puts "#{event.to_.split("_").map do ([x]x.capitalize.join(" ")}: #supplies.join(", "))"
     end
-end
-
-def all_holidays_with_bbq(holiday_hash)
-  array = []
-  holiday_hash.map. do|season, holiday|
-    holiday.map do |holiday, item|
-      holiday if item.include?("BBQ")
-    end
-  end.flatten
-end
-
-all_holidays_with_bbq
+  end
+end  
